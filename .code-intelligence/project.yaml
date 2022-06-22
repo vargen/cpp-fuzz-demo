@@ -39,7 +39,7 @@ build_script: ".code-intelligence/build.sh"
 
 ## Paths to the fuzz targets to execute.
 fuzz_tests:
-  - .code-intelligence/fuzz_targets/fuzz_malloc_and_free.cpp
+  - .code-intelligence/fuzz_targets/fuzz_cpp-demo_::malloc_and_free.cpp
 
 ## Go packages containing fuzz targets. A fuzzer is created
 ## for each function starting with "Fuzz"
