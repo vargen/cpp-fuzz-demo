@@ -1,3 +1,9 @@
 {
-    "cifuzz.project.name": "projects/cpp-demo-d9e0244c"
+    "cifuzz.project.name": "",
+    "files.associations": {
+        "array": "cpp",
+        "string_view": "cpp",
+        "initializer_list": "cpp",
+        "utility": "cpp"
+    }
 }

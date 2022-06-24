@@ -1,5 +1,5 @@
 ## Configuration for a CI Fuzz project
-## Generated on 2022-06-22 with CI Fuzz 2.35.0
+## Generated on 2022-06-23 with CI Fuzz 2.35.0
 ##
 ## Lines that start with "##" are explanations for the following
 ## setting, lines that start with "#" are settings that can be enabled
@@ -40,6 +40,8 @@ build_script: ".code-intelligence/build.sh"
 ## Paths to the fuzz targets to execute.
 fuzz_tests:
   - .code-intelligence/fuzz_targets/fuzz_cpp-demo_::malloc_and_free.cpp
+  - .code-intelligence/fuzz_targets/fuzz_cpp-demo_::print_iso_in_DMY.cpp
+  - .code-intelligence/fuzz_targets/fuzz_cpp-demo_::duplicate_str.cpp
 
 ## Go packages containing fuzz targets. A fuzzer is created
 ## for each function starting with "Fuzz"
@@ -82,6 +84,3 @@ parallel_executions: 1
 ## results, but could take a long time for slow fuzz targets. Set to
 ## true if you don't want to use the initial input corpus.
 #no_initial_corpus: true
-
-compiler_extra_args:
-  - "-fPIC"

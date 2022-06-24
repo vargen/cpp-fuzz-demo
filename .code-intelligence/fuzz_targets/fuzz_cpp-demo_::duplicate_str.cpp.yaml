@@ -17,6 +17,7 @@ compiler_extra_args:
   - "-Ibuild"
   - "-lcpp-demo"
   - "-Lbuild"
+  - "-Ifuzzing"
 
 ## Additional arguments to pass to the fuzz target when it is executed.
 ## Note that any relative paths are resolved relative to the root of the
